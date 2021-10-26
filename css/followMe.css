@@ -1,0 +1,61 @@
+#SocialM{
+    top: 55%;
+    max-width: 82px;
+    position: fixed;
+    right: -20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#SocialM.active{
+    right: 1%;
+    transition: all 1s ease;
+}
+
+.social .fab{
+    font-size: 50px;
+    padding: 1rem;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.social .fab:hover{
+    cursor: pointer;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.social .fab.fa-facebook-square{
+    filter: drop-shadow(5px 5px 4px rgb(15, 28, 214));
+    color: rgba(35, 49, 255, 0.877);
+} 
+
+.social .fab.fa-instagram{
+    filter: drop-shadow(5px 5px 4px rgb(187, 8, 68));
+    color: rgb(187, 8, 68);
+} 
+
+.social .fab.fa-whatsapp{
+    filter: drop-shadow(5px 5px 4px rgb(25, 211, 0));
+    color: rgb(25, 211, 0);
+} 
+
+.social .fab.fa-facebook-square:hover{
+    filter: drop-shadow(20px 20px 4px rgb(15, 28, 214));
+} 
+
+.social .fab.fa-instagram:hover{
+    filter: drop-shadow(20px 20px 4px rgb(187, 8, 68));
+} 
+
+.social .fab.fa-whatsapp:hover{
+    filter: drop-shadow(20px 20px 4px rgb(25, 211, 0));
+} 
+
+
+@media (max-width: 1400px) {
+    #SocialM.active{
+        top: 70%;
+        transition:  top 1s ease;
+    } 
+}

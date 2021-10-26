@@ -1,0 +1,305 @@
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  }
+
+body {
+  margin: 0;
+  margin-top: 101vh;
+  box-shadow: 0px -3px 10px black;
+  background-image: url('../img/back.jpg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  overflow: hidden;
+  font-family: 'Poppins';
+}
+
+body.active {
+  margin-top: 0px;
+  transition: margin-top 1.5s ease;
+}
+
+body.activeComing {
+  margin-top: 0px;
+}
+
+div.opa{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+loading {
+  opacity: 0%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  background-color: cornsilk;
+}
+
+loading.on {
+  opacity: 100%;
+}
+
+loading.exit {
+  top: -100%;
+  transition: top 1.5s ease;
+  transition-delay: 0.5s;
+}
+
+#loading {
+  border: 2px solid hsl(0, 0%, 10%);
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  border-radius: 100%;
+  overflow: hidden;
+  transform: rotate(180deg);
+  box-shadow: 0px 0px 10px hsl(00, 50%, 50%);
+}
+
+#loading.exit {
+  top: -150%;
+  transition: top 1.5s ease;
+}
+
+#loading span {
+  width: 100px;
+  height: 0px;
+  background-color: hsl(0, 0%, 10%);
+  display: block;
+  transition: height 1s ease;
+}
+
+#loading span:nth-child(3) {
+  width: 100px;
+  height: 100px;
+  bottom: 0px;
+  border-radius: 100%;
+  background-color: white;
+  opacity: 0%;
+  position: absolute;
+}
+
+#loading span:nth-child(3).active {
+  opacity: 100%;
+  transition: all 1s ease;
+  transform: rotate(540deg);
+}
+
+#loading span:nth-child(3).active i {
+  margin: 0px;
+  font-size: 100px;
+}
+
+#loading span:nth-child(2).lleno {
+  transition: height 0.5s ease;
+}
+
+#loading span.lleno {
+  width: 100px;
+  height: 50px;
+  background-color: hsl(0, 0%, 10%);
+  display: block;
+  transition: height 0.5s ease-out;
+}
+
+.welcome {
+  width: 560px;
+  min-width: 700px;
+  position: relative;
+}
+
+.welcome hgroup {
+  color: white;
+  margin-left: 10%;
+  transition: margin-top 0.5s ease;
+  width: 100%;
+  min-width: 700px;
+}
+
+.welcome hgroup #again {
+  position: relative;
+  float: right;
+  margin-right: 0px;
+  opacity: 0%;
+}
+
+.welcome hgroup #again.active {
+  opacity: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.welcome hgroup.msjActive {
+  margin-top: -300px;
+  transition: all 0.5s ease;
+}
+
+.welcome h1 {
+  font-size: 300%;
+  letter-spacing: 5px;
+  text-shadow: -1px -1px 5px hsl(0, 0%, 0%);
+  display: inline;
+  position: relative;
+  bottom: 0px;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.welcome h1:last-child {
+  font-size: 300%;
+  margin-bottom: 5px;
+  letter-spacing: 5px;
+  text-shadow: -1px -1px 5px hsl(0, 0%, 0%);
+  display: inline;
+  transition: all 0.2s ease;
+  margin-left: -5px;
+}
+
+.welcome h1 span {
+  font-family: "Allison", cursive;
+  margin-right: 7px;
+  font-size: 100px;
+  top: 0px;
+  text-shadow: -1px -1px 5px hsl(0, 0%, 0%);
+  transition: all 0.2s ease;
+  color: red;
+}
+
+.welcome h1.hover span,
+.welcome h1:hover span {
+  font-size: 120px;
+  color: hsl(0, 100%, 40%);
+  transition: all 0.2s ease;
+}
+
+#coma {
+  padding-right: 5px;
+}
+
+.welcome h1.hover,
+.welcome h1:hover {
+    font-family: 'Mali', cursive;
+  font-weight: bold;
+  font-size: 350%;
+  bottom: 10px;
+  transition: all 0.2s ease;
+  color: red;
+  cursor: default;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 45%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.welcome h3 {
+  font-weight: normal;
+  transition: all 0.2s ease;
+  margin-top: -10px;
+  max-width: 800px;
+}
+
+.welcome h3 span {
+  font-weight: bold;
+}
+
+.present_container {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px black;
+}
+
+.container_pic {
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 100%;
+  box-shadow: 0px 0px 5px hsl(60, 100%, 50%);
+}
+
+.container_pic img {
+  margin-left: -90px;
+  height: 250px;
+}
+
+section .wave {
+  position: absolute;
+  width: 100%;
+  height: 143px;
+  bottom: 0;
+  left: 0;
+  background: url(/img/wave.png);
+  animation: animate 10s linear infinite;
+  z-index: -1;
+  filter: blur(2px);
+}
+
+div.proxCont{
+  position: absolute;
+  transition: all 1s ease-in-out;
+  animation: avisoAnim 10s linear infinite;
+  bottom: -100px;
+}
+
+div.proxCont.active{
+  bottom: 10px;
+  left: 100px;
+}
+
+div.proxCont b, div.proxCont p{
+  margin: 10px;
+}  
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1300px;
+  }
+}
+
+@keyframes avisoAnim {
+  0% {
+    color: white;
+  }  
+  50%{
+    color: black;
+  }
+  100% {
+    color: white;
+  } 
+}
+
+@media (max-width: 1400px) {
+  .welcome hgroup {
+    margin-left: 50px;
+    min-width: 700px;
+  }
+
+  .welcome hgroup h1 {
+    font-size: 200%;
+  }
+
+  .welcome hgroup.msjActive {
+    margin-top: -250px;
+  }
+}

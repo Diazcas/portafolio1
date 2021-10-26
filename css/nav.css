@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  }
+
+nav {
+    margin: 0px;
+    height: 100vh;
+    width: 74px;
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 10%);
+    box-shadow: -1px 0px 10px black;
+    font-family: 'Poppins';
+    z-index: 500;
+}
+
+nav.hover{
+    width: 110px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    text-shadow: none;
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+nav  a.hover{
+    color: black;
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+    text-shadow: 0px 0px 3px white;
+}
+
+nav ul{
+    list-style: none;
+    margin-left: -40px;
+    height: 350px;
+    background-color: hsl(0, 0%, 10%);
+    position: absolute;
+    z-index: 2;
+}
+
+nav ul li:last-child a{
+    color: hsl(60, 100%, 40%);
+}
+
+nav ul li:last-child a:hover{
+    color: hsl(60, 100%, 50%);
+}
+
+nav .labels{
+    position: relative;
+    z-index: 1;
+    height: 350px;
+    margin-top: 25px;
+}
+
+nav label:nth-child(2), nav label:nth-child(3), nav label:nth-child(4){
+    margin-top: 25px;
+}
+
+
+nav label{
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+    margin-left: -150px;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px black;
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: opacity 0.5s ease, margin-left 1s ease-out;
+    display: block;
+    text-shadow: -1px -1px 5px hsl(0, 0%, 0%);
+}
+
+nav label.active{
+    margin-left: 70px;
+    opacity: 100%;
+    transition: opacity 0.5s ease, margin-left 1s ease;
+}
+
+nav li{
+    padding: 20px 20px;
+    display: flex;
+}
+
+nav li:hover{
+    cursor: pointer;
+}
+
+/*-------------------------------- Form de msj --------------------------------*/
+
+div#formfilter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+    transition: all 0.5s ease;
+    font-family: 'Poppins';
+    z-index: 499;
+}
+
+div#formfilter.active{
+    display: block;
+    
+}
+
+div#formfilter.active.show{
+    transition: all 0.5s ease;
+    backdrop-filter: blur(2px);
+    opacity: 100%;
+}
+
+form{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    transition: all 0.5s ease;
+}
+
+form.out, div.out{
+    display: none;
+}
+
+form.active1{
+    display: block;
+}
+
+fieldset{
+    width: 400px;
+    border-radius: 20px;
+    border-bottom-left-radius: 180px;
+    color: #efefef;
+    background-color: hsl(0, 0%, 10%);
+    position: relative;
+    border: none;
+    box-shadow:  0px 0px 9px black;
+}
+
+
+fieldset legend{
+    border-radius: 10px;
+    border: 0px solid grey;
+    padding: 10px 15px;
+    background-color: hsl(45, 100%, 45%);
+    color: black;
+    position: relative;
+    box-shadow:  0px 0px 3px black;
+    font-weight: bold;
+}
+
+fieldset .inp{
+    width: 240px;
+    padding: 10px;
+    font-size: 110%;
+    margin-top: 10px;
+    border-radius: 5px;
+    z-index: 100;
+    padding-left: 50px;
+    
+    
+}
+
+fieldset .inp#email{
+    background-repeat: no-repeat;
+    background-size: 30px; 
+    background-position: 5px 5px;
+    background-color: hsl(45, 100%, 45%);
+}
+
+fieldset .inp#textarea{
+    width: 260px;
+    padding: 10px 20px;
+}
+
+fieldset input:last-child{
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 9px 20px;
+    background-color: hsl(45, 100%, 45%);
+    font-weight: bold;
+    text-shadow: 0px 0px 1px black;
+    font-family: cursive;
+    font-size: 90%;
+    border-radius: 5px;
+    border: none;
+}
+
+fieldset #submit{
+    float: right;
+}
+
+fieldset label{
+    display: inline-block;
+    text-align: right;
+    width: 80px;
+    vertical-align: top;
+    margin-top: 8px;
+    font-size: 15px;
+    color: hsl(45, 100%, 45%);
+    text-shadow: -2px -2px 1px black;
+}
+
+fieldset label:first-child{
+    margin-top: 22px;
+}
+
+@media (max-width: 1400px) {
+    form{
+        bottom: 5%;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/recorrido.css" type="text/css">
+    <link rel="stylesheet" href="css/changeS.css" type="text/css">
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
+    <link rel="stylesheet" href="css/cartP.css" type="text/css">
+    <link rel="stylesheet" href="css/followMe.css" type="text/css">
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/36ea8103f6.js" crossorigin="anonymous"></script>
+
+
+
+
+    <title>Mi recorrido</title>
+</head>
+<body>
+    <div class="opa"></div>
+    <!-- Contenedor para la barra de navegacion -->
+    <nav></nav>
+
+    <!-- Contenedor para mostrar seccion de mensaje -->
+    <div class="out" id="formfilter"></div>
+
+    <!-- Contenedor de las redes sociales -->
+    <div id="SocialM"></div>
+
+    <!-- Contenedor para la transicion entre pantallas -->
+    <div class="active" id="changeS"></div>
+
+    <div class="cartPC">
+        <div class="logo">
+          <img src="" alt="" />
+        </div>
+        <div class="text">
+          <p id="name">Aníbal Díaz</p>
+          <p id="description">Desarrollador de front-end, JS</p>
+        </div>
+      </div>
+
+    <div class="container">
+        <section>
+            <div class="titulo"><i class="fas fa-globe-americas"></i> <h3>Web</h3></div>
+            <ul>
+                <li>Javascript</li>
+                <li>Angular</li>
+                <li>Node</li>
+                <li>Css</li>
+                <li>Bootstrap</li>
+            </ul>
+        </section>
+        <section class="second">
+            <div class="titulo second"><i class="fas fa-network-wired"></i> <h3>Redes de datos</h3></div>
+            <ul>
+                <li>Redes Ipv4</li>
+                <li>Redes Ipv6</li>
+                <li>Protocolos de routing</li>
+                <li>Configuraciones DHCP</li>
+            </ul>
+        </section>
+        <section>
+            <div class="titulo"><i class="fas fa-database"></i> <h3>Bases de datos</h3></div>
+            <ul>
+                <li>MySQL</li>
+                <li>Oracle</li>
+                <li>MongoDB</li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="js/recorrido.js" type="module"></script>
+    <script src="js/nav.js" type="module"></script>
+    <script src="js/followMe.js" type="module"></script>
+    <script src="js/changeS.js" type="module"></script>
+    
+</body>
+</html>

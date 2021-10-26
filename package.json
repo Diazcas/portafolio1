@@ -1,0 +1,19 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "\"Mi primer portafolio en web\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diazcas/portafolio1.git"
+  },
+  "author": "\"Anibal Diaz\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diazcas/portafolio1/issues"
+  },
+  "homepage": "https://github.com/Diazcas/portafolio1#readme"
+}
