@@ -73,7 +73,7 @@ elNavHome.addEventListener(
   "click",
   function () {
     sessionStorage.setItem('welcome', 'true');
-    if (location == 'index.html') {
+    if (location == '/') {
       d.getElementById("changeS").classList = "activeM";
       setTimeout(() => {
         changeSOut();
@@ -81,7 +81,7 @@ elNavHome.addEventListener(
     } else {
       d.getElementById("changeS").classList = "active";
       setTimeout(() => {
-        window.open("index.html", "_self");
+        window.open("/", "_self");
       }, 500);
     }
   },
@@ -108,7 +108,7 @@ elNavFolder.addEventListener(
   "click",
   function () {
 
-    if (location == 'proyectos.html') {
+    if (location == 'proyectos') {
       d.getElementById("changeS").classList = "activeM";
       setTimeout(() => {
         changeSOutnI();
@@ -116,7 +116,7 @@ elNavFolder.addEventListener(
     } else {
       d.getElementById("changeS").classList = "active";
       setInterval(() => {
-        window.open("proyectos.html", "_self");
+        window.open("proyectos", "_self");
       }, 500);
     }
   },
@@ -200,7 +200,7 @@ elNavMsj.addEventListener(
 
 // console.log(location)
 
-if (location == 'index.html') {
+if (location == 'index') {
   d.getElementById('formfilter').addEventListener('click', showContactMeIndex, false)
   // console.log('hola')
 }
@@ -231,7 +231,7 @@ elNavAbout.addEventListener(
 
 elNavAbout.addEventListener('click',
   function () {
-    if (location == 'recorrido.html') {
+    if (location == 'recorrido') {
       d.getElementById("changeS").classList = "activeM";
       setTimeout(() => {
         changeSOutnI();
@@ -239,7 +239,7 @@ elNavAbout.addEventListener('click',
     } else {
       d.getElementById("changeS").classList = "active";
       setInterval(() => {
-        window.open("recorrido.html", "_self");
+        window.open("recorrido", "_self");
       }, 500);
     }
   }
